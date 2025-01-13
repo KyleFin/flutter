@@ -235,8 +235,15 @@ class LongPressGestureRecognizer extends PrimaryPointerGestureRecognizer {
   /// {@macro flutter.gestures.tap.TapGestureRecognizer.allowedButtonsFilter}
   ///
   /// {@macro flutter.gestures.GestureRecognizer.supportedDevices}
+  this.deadline,
+    this.preAcceptSlopTolerance = kTouchSlop,
+    this.postAcceptSlopTolerance = kTouchSlop,
+    super.debugOwner,
+    super.supportedDevices,
+    super.allowedButtonsFilter,
   LongPressGestureRecognizer({
     Duration? duration,
+    super.preAcceptSlopTolerance = kTouchSlop,
     super.postAcceptSlopTolerance = null,
     super.supportedDevices,
     super.debugOwner,
